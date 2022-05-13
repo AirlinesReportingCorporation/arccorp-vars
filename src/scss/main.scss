@@ -1,5 +1,5 @@
-@use "partials/borders.scss";
-@use "partials/colors.scss";
-@use "partials/fonts.scss";
+@forward "partials/borders.scss";
+@forward "partials/colors.scss";
+@forward "partials/fonts.scss";
 
 $namespace: arc-;
