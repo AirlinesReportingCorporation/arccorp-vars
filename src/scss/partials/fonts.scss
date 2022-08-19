@@ -1,4 +1,52 @@
-//Font Family
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Regular.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SourceSansPro-SemiboldItalic;
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-SemiboldItalic.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-SemiboldItalic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Bold.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SourceSansPro-Black;
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Black.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/SourceSansPro-Black.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: RobotoSlab-Regular;
+  src: url("https://www2.arccorp.com/static/fonts/RobotoSlab-Regular.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/RobotoSlab-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: RobotoSlab-Bold;
+  src: url("https://www2.arccorp.com/static/fonts/RobotoSlab-Bold.ttf");
+  src: url("https://www2.arccorp.com/static/fonts/RobotoSlab-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $arc-font-regular: SourceSansPro-Regular, arial, helvetica, sans-serif;
 $arc-font-light: SourceSansPro-Light, SourceSansPro-Regular, arial, helvetica,
   sans-serif;
