@@ -1,0 +1,52 @@
+@use "./colors.scss";
+
+.callout-box-container {
+  padding-top: 80px;
+  &.dark {
+    background: colors.$tarmac;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.callout-box {
+  padding: 60px;
+  text-align: center;
+}
+
+.callout-box.teal {
+  color: #ffffff;
+  background: colors.$arc-teal;
+}
+
+.callout-box.white-outline {
+  color: #ffffff;
+  border: 5px solid colors.$white;
+  .ctaBtn--white.product-cta {
+    color: colors.$tarmac !important;
+  }
+}
+
+.callout-box-eyebrow {
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.callout-box-title {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.callout-box-copy {
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 830px;
+  margin: 0 auto 30px;
+}
