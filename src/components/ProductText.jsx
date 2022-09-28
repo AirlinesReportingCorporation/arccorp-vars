@@ -9,7 +9,14 @@ class ProductText extends Component {
     return (
       <div
         id={this.props.id}
-        className={this.props.className ? this.props.className : ""}
+        className={
+          this.props.className
+            ? this.props.className + (this.props.backgroundImage ? " lazy" : "")
+            : this.props.backgroundImage
+            ? " lazy"
+            : ""
+        }
+        data-bg={this.props.backgroundImage}
       >
         <div className="callout-container">
           <div className="container">
