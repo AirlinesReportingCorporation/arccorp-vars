@@ -45,11 +45,7 @@ class ProductText extends Component {
                 </div>
               </div>
             </div>
-            {this.props.body ? (
-              <div className="row">{this.props.body}</div>
-            ) : (
-              ""
-            )}
+            {this.props.body ? this.props.body : ""}
           </div>
         </div>
       </div>

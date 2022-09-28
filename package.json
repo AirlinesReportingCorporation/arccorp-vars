@@ -1,6 +1,6 @@
 {
   "name": "arccorp-vars",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Airlines Reporting Corporation Marketing Design Tokens and Styleguide",
   "main": "dist/index.js",
   "babel": {
