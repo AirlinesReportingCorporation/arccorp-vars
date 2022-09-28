@@ -3,21 +3,19 @@ var path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: glob.sync("./src/components/**.jsx").reduce(function (obj, el) {
-    obj[path.parse(el).name] = el;
-    return obj;
-  }, {}),
+  entry: "./src/index.jsx",
   output: {
-    path: path.resolve(__dirname, "dist/components"),
-    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
   },
-  target: "web",
+  target: ["web", "es5"],
   mode: "production",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        include: path.join(__dirname, "/src"),
         use: {
           loader: "babel-loader",
           options: {
@@ -41,4 +39,7 @@ module.exports = {
       ],
     }),
   ],
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+  },
 };
