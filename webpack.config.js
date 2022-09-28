@@ -8,7 +8,7 @@ module.exports = {
     return obj;
   }, {}),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist/components"),
     filename: "[name].js",
   },
   target: "web",
@@ -33,6 +33,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, "src/scss"),
           to: path.resolve(__dirname, "dist/scss"),
+        },
+        {
+          from: path.resolve(__dirname, "src/index.jsx"),
+          to: path.resolve(__dirname, "dist/"),
         },
       ],
     }),
