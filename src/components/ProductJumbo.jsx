@@ -33,8 +33,12 @@ class ProductJumbo extends Component {
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-7">
-              <div style={{ maxWidth: "600px" }}>
+            <div className="col-lg-12">
+              <div
+                style={{
+                  maxWidth: this.props.width ? this.props.width : "600px",
+                }}
+              >
                 <h2 className="product-header white">{this.props.title}</h2>
                 <a
                   href={this.props.ctaLink}
