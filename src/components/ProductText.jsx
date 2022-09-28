@@ -47,6 +47,7 @@ class ProductText extends Component {
             </div>
             {this.props.body ? this.props.body : ""}
           </div>
+          {this.props.outerBody ? this.props.outerBody : ""}
         </div>
       </div>
     );
