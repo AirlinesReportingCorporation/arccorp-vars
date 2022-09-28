@@ -7,7 +7,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    libraryTarget: "umd",
+    library: "arccorp-vars"
   },
+  externals: [nodeExternals()],
   target: ["web", "es5"],
   mode: "production",
   module: {
@@ -31,11 +34,7 @@ module.exports = {
         {
           from: path.resolve(__dirname, "src/scss"),
           to: path.resolve(__dirname, "dist/scss"),
-        },
-        {
-          from: path.resolve(__dirname, "src/index.jsx"),
-          to: path.resolve(__dirname, "dist/"),
-        },
+        }
       ],
     }),
   ],
