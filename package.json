@@ -3,10 +3,20 @@
   "version": "0.0.8",
   "description": "Airlines Reporting Corporation Marketing Design Tokens and Styleguide",
   "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "webpack"
   },
   "author": "Ian Fajardo",
   "license": "ISC",
