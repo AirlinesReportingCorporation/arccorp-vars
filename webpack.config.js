@@ -1,6 +1,6 @@
-var glob = require('glob');
-var path = require('path');
-
+var glob = require("glob");
+var path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: glob.sync("./src/components/**.jsx").reduce(function (obj, el) {
@@ -27,4 +27,14 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/scss"),
+          to: path.resolve(__dirname, "dist/scss"),
+        },
+      ],
+    }),
+  ],
 };
