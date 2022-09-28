@@ -155,3 +155,5 @@ class ProductIcons extends Component {
     );
   }
 }
+
+export default ProductIcons;

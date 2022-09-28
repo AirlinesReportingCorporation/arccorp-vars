@@ -1,6 +1,7 @@
 var glob = require("glob");
 var path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: "./src/index.jsx",

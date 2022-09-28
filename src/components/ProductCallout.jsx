@@ -41,3 +41,5 @@ class ProductCallout extends Component {
     );
   }
 }
+
+export default ProductCallout;
