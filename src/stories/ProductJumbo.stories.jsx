@@ -8,7 +8,11 @@ export default {
   component: ProductJumbo,
 };
 
-const Template = (args) => <ProductJumbo {...args} />;
+const Template = (args) => (
+  <div className="full-width">
+    <ProductJumbo {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 
