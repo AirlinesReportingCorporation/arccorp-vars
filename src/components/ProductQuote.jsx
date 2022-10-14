@@ -16,9 +16,14 @@ class ProductQuote extends Component {
   render() {
     return (
       <div
-        className="product-quote product-quote-bg fluid lazy"
-        id="customers"
-        data-bg="https://www2.arccorp.com/globalassets/destination-gateway/dg-quote.png"
+      // For classname you had fluid, I'm not sure what that tied into, but would I need to add it in the turnary?
+        className={this.props.className + "fluid"
+        ? this.props.className + (this.props.backgroundImage ? " lazy" : "")
+        : this.props.backgroundImage
+        ? " lazy"
+        : ""}
+        id={this.props.id}
+        data-bg={this.props.backgroundImage}
       >
         <div className="container">
           <div className="row">
@@ -30,19 +35,14 @@ class ProductQuote extends Component {
                       <div className="product-quote-mark">&ldquo;</div>
                       <div>
                         <div className="product-quote-copy" style={{maxWidth: "575px"}}>
-                          I am often confronted with questions such as, ‘How’s
-                          the season picking up?’, ‘How are we ranked vs. other
-                          competitors?’,or ‘What’s our air service capacity like
-                          for the summer?’. I can now confidently showcase our
-                          direction and performance based on real-time data
-                          monitored and shared via ARC and ForwardKeys.” &rdquo;
+                         {this.props.quote}
                         </div>
                         <div className="product-quote-name">
-                          <strong>Miles Mercera</strong>
+                          <strong>{this.props.author}</strong>
                           <br />
-                          CEO
+                          {this.props.title}
                           <br />
-                          Tourism Corporation Bonaire
+                          {this.props.company}
                         </div>
                         {/* <a
                           href="https://www2.arccorp.com/products-participation/customer-success-stories"
