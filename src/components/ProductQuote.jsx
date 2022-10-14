@@ -13,15 +13,23 @@ class ProductQuote extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    document.lazyLoadInstance.update();
+  }
+
+  // Update lazyLoad after rerendering of every image
+  componentDidUpdate() {
+    document.lazyLoadInstance.update();
+  }
+
   render() {
     return (
       <div
-      // For classname you had fluid, I'm not sure what that tied into, but would I need to add it in the turnary?
-        className={this.props.className + "fluid"
-        ? this.props.className + (this.props.backgroundImage ? " lazy" : "")
-        : this.props.backgroundImage
-        ? " lazy"
-        : ""}
+        className={
+          this.props.className
+            ? this.props.className + " fluid product-quote product-quote-bg lazy"
+            : "fluid product-quote product-quote-bg lazy"
+        }
         id={this.props.id}
         data-bg={this.props.backgroundImage}
       >
@@ -34,8 +42,11 @@ class ProductQuote extends Component {
                     <div className="d-flex">
                       <div className="product-quote-mark">&ldquo;</div>
                       <div>
-                        <div className="product-quote-copy" style={{maxWidth: "575px"}}>
-                         {this.props.quote}
+                        <div
+                          className="product-quote-copy"
+                          style={{ maxWidth: "575px" }}
+                        >
+                          {this.props.quote} &rdquo;
                         </div>
                         <div className="product-quote-name">
                           <strong>{this.props.author}</strong>
