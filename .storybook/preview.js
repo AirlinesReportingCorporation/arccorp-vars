@@ -10,4 +10,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    storySort: {
+      order: ['Introduction', 'Developers', 'Components'],
+    },
+  },
+  docs: {
+    docsPage: false
+  }
 }

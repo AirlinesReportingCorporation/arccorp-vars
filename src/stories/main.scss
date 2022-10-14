@@ -3,3 +3,15 @@
 @import url("https://arccorp-script-test.netlify.app/main.min.css");
 
 @import "../scss/main.scss";
+
+#storybook-root, #root {width: 100%}
+
+.sbdocs {
+  max-width: 100% !important;
+}
+
+.docs-story {
+ div {
+   width: 100%;
+ }
+}
