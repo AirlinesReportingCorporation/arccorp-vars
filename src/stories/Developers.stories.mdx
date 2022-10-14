@@ -114,35 +114,45 @@ import StackAlt from './assets/stackalt.svg';
   
 `}</style>
 
-# Welcome to ARCCorp Vars
-## ARC Variables
+# Developers
+## Updating/Adding Components
 
-This repo contains resuable tokens, variables, and react components common to the ARC marketing front-end design system.
+All components should be updated in the `src > components` folder. Each component should be added and tested in storybook before deploying.
 
-## Using SASS Variables and Tokens
-In your SASS file, @import or @use the partial that you need.
+## Using Storybook
 
-```
-@import "~arccorp-vars/src/scss/partials/colors.scss";
-```
+The Storybook environment is used for documentation and testing purposes for SCSS variables and components. Components must be tested via Storybook and approved before deploying to NPM.
 
-Or @use all vars using this:
+To start Storybook while developing a new component use the `npm run storybook` command to start a development environment. This will deploy to localhost:6006 and allow you to test your component. Storybook documentation pages are under `src > stories` and a new page must be created to be able to test a component. Copy one of the existing stories and rename to match your new component. Then import the new component on that page and update with props to be able to test in storybook.
 
 ```
-@use "~arccorp-vars/src/scss/main.scss";
+npm run storybook
 ```
 
-Please note that using @use requires the call to be above any other sass in the file. Refer to this [link here](https://sass-lang.com/documentation/at-rules/use).
+Once completed and ready to be published to Storybook run the `npm run build-storybook` command to build the files. Once completed, commit the files and push to remote. This will push to the [https://arccorp-vars.netlify.com/](https://arccorp-vars.netlify.com/) url for live testing.
 
-## Using React Components
-
-
-## Using NPM
 ```
-npm install arccorp-vars --save
+npm run build-storybook
 ```
 
-## Using Yarn
+## Deployment
+
+### Building Files
+
+When you are done testing components and they are ready for deployment, you'll need to build the files using the npm build command as outlined below. This will output the correct files to the `/dist` folder.
+
 ```
-yarn add arccorp-vars
+npm run build
 ```
+
+### Publish to NPM
+
+Make sure to commit those build files and other changes to the repo with a descriptive message. Afterwards, update the version number in the `package.json ` file to prepare for publishing to NPM. Run the `npm publish` command under the root and the version will be updated int eh NPM repo to be used.
+
+```
+npm publish
+```
+
+
+## Updating/Adding SCSS and Variables
+SCSS and Variable tokens are under the `src > scss` folders. The main folder should only contain imports from all partials within the partials folder. For new styles, create a new partial that relates to the variables or component with an underscore in the beginning of the file name like so: `_component.scss`.

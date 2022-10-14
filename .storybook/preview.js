@@ -14,8 +14,5 @@ export const parameters = {
     storySort: {
       order: ['Introduction', 'Developers', 'Components'],
     },
-  },
-  docs: {
-    docsPage: false
   }
 }
