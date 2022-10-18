@@ -28,32 +28,25 @@ class ProductLinks extends Component {
         <div className="container arc-pay-resources">
           <div className="box-icon-container">
             <div className="row align-items-center text-center">
-              {this.props.prodLink ?
-              this.props.prodLink.map((prodLink, i) => (
-                <div className="col-lg-4">
-                <div className="box-icon-item pl-0 pr-0">
-                  <img
-                    className="lazy"
-                    data-src={prodLink.icon}
-                    alt={prodLink.alt}
-                    style={{ padding: "10px 0" }}
-                  />
-                  <div className="box-icon-header">
-                    {prodLink.header}
-                  </div>
-                  <div className="box-icon-copy pl-0 pr-0">
-                    {prodLink.copy}
-                  </div>
-                  <a
-                    href={prodLink.link}
-                    className={prodLink.linkclass}
-                  >
-                    {prodLink.cta} <i className="fas fa-chevron-down"></i>
-                  </a>
-                </div>
-              </div>
-              )) : ""}
-              
+              {this.props.prodLink
+                ? this.props.prodLink.map((prodLink, i) => (
+                    <div className="col-lg-4">
+                      <div className="box-icon-item">
+                        <img
+                          className="lazy"
+                          data-src={prodLink.icon}
+                          alt={prodLink.alt}
+                          style={{ padding: "10px 0" }}
+                        />
+                        <div className="box-icon-header">{prodLink.header}</div>
+                        <div className="box-icon-copy">{prodLink.copy}</div>
+                        <a target="_blank" href={prodLink.link} className="link-download">
+                          {prodLink.cta} <i className= {prodLink.cta ? ( prodLink.cta === "Download" ? "fas fa-chevron-down" : "fas fa-chevron-right") : ""}></i>
+                        </a>
+                      </div>
+                    </div>
+                  ))
+                : ""}
             </div>
           </div>
         </div>
