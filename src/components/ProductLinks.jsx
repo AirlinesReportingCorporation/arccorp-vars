@@ -33,7 +33,7 @@ class ProductLinks extends Component {
                     <div className="col-lg-4">
                       <div className="box-icon-item">
                         <img
-                          className="lazy"
+                          className="lazy box-icon-img"
                           data-src={prodLink.icon}
                           alt={prodLink.alt}
                           style={{ padding: "10px 0" }}

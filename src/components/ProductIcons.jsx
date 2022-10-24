@@ -25,7 +25,7 @@ class ProductIcons extends Component {
   render() {
     return (
       <div
-        class={this.props.className ? this.props.className + "bg-section lazy" : "bg-section lazy"}
+        class={this.props.className ? this.props.className + " bg-section lazy" : "bg-section lazy"}
         data-bg={this.props.bg}
       >
         <div class={this.props.bg} id={this.props.id}>
