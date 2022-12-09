@@ -5,6 +5,8 @@ class ProductText extends Component {
     super(props);
   }
 
+  // TODO - span for highlighted area like on ARC Pay
+
   render() {
     return (
       <div
