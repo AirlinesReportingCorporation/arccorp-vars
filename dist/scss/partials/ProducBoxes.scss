@@ -1,0 +1,50 @@
+.data-icon-number-inner {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 80px;
+    margin-bottom: 35px;
+}
+
+.data-icon-inner {
+    color: #fff;
+    background: #222;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.data-icon-number {
+    color: #f8c743;
+    height: 60px;
+    width: 60px;
+    border: 3px solid #f8c743;
+    border-radius: 50%;
+    font-family: SourceSansPro-SemiBold,Arial,Helvetica,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    margin: 20px auto;
+}
+
+.data-icon-grid-text {
+    font-family: SourceSansPro-SemiBold,Arial,Helvetica,sans-serif;
+    font-size: 60px;
+    line-height: 48px;
+}
+
+.data-icon-grid-label {
+    font-family: SourceSansPro-SemiBold,Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    color: #9a99a0;
+    margin-top: 10px;
+}
+
+a.link-download {
+    font-family: SourceSansPro-Bold,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.data-panel--white a {
+    color: #1a9cb1;
+}

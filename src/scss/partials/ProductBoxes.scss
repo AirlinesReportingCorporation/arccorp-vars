@@ -1,0 +1,64 @@
+@use "./colors.scss";
+@use "./fonts.scss";
+
+.data-icon-inner {
+    color: colors.$white;
+    background: #222;
+    border-radius: 8px;
+    padding: 30px;
+} 
+
+.data-icon-number-inner {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 80px;
+    margin-bottom: 35px;
+}
+
+.data-icon-number {
+    color: colors.$beacon;
+    height: 60px;
+    width: 60px;
+    border: 3px solid colors.$beacon;
+    border-radius: 50%;
+    font-family: fonts.$arc-font-semibold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    margin: 20px auto;
+}
+
+.data-icon-grid-text {
+    font-family: fonts.$arc-font-semibold;
+    font-size: 60px;
+    line-height: 48px;
+}
+
+.data-icon-grid-label {
+    font-family: fonts.$arc-font-semibold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #9a99a0;
+    margin-top: 10px;
+}
+
+a.link-download {
+    font-family: fonts.$arc-font-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+a.link-download i, a.link-download svg {
+    font-size: 12px;
+    margin-left: 3px;
+    margin-top: 1.5rem;
+}
+
+.fa-chevron-right:before {
+    content: "\f054";
+}
+.data-panel--white a {
+    color: #1a9cb1;
+}
