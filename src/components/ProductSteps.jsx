@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-class ProductBoxes extends Component {
+class ProductSteps extends Component {
   constructor(props) {
     super(props);
   }
@@ -15,7 +15,7 @@ class ProductBoxes extends Component {
         {this.props.prodBoxes
                   ? this.props.prodBoxes.map((box, i) => (
         <div className="col-lg-4">
-          <div className="data-icon-inner data-icon-number-inner text-center" style={box.links ? {paddingBottom: "35px"} : {paddingBottom: ''}}>
+          <div className="data-icon-inner data-icon-number-inner text-center" style={box.links ? {paddingBottom: "40px"} : {paddingBottom: ''}}>
             <div className="data-icon-number">{box.number}</div>
             <div className="data-icon-grid-text">{box.text}</div>
             <div className="data-icon-grid-label">{box.label}</div>
@@ -34,4 +34,4 @@ class ProductBoxes extends Component {
   }
 }
 
-export default ProductBoxes;
+export default ProductSteps;
