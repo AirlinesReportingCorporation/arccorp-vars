@@ -13,7 +13,7 @@ class Stickynav extends Component {
   render() {
     return (
       <div className="arc-sticky-container" style={{ zIndex: "3" }}>
-        <div className="arc-sticky-inner">
+        <div className="arc-sticky-inner" style={{backgroundColor: this.props.color ? this.props.color : "#189bb0" }}>
           <div className="arc-sticky-nav">
             <div className="arc-sticky-brand d-flex align-items-center">
               <a
