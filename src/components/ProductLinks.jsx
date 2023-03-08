@@ -30,7 +30,7 @@ class ProductLinks extends Component {
             <div className="row align-items-center text-center">
               {this.props.prodLink
                 ? this.props.prodLink.map((prodLink, i) => (
-                    <div className="col-lg-4">
+                    <div className={this.props.colClass ? this.props.colClass : "col-lg-auto"}>
                       <div className="box-icon-item">
                         <img
                           className="lazy box-icon-img"
