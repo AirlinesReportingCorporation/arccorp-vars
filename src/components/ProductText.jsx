@@ -35,18 +35,22 @@ class ProductText extends Component {
                 </h2>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-12">
-                <div
-                  className={
-                    "product-callout-copy " +
-                    (this.props.subTitleClass ? this.props.subTitleClass : "")
-                  }
-                >
-                  {this.props.subtitle}
+            {this.props.subTitleClass ? (
+              <div className="row">
+                <div className="col-lg-12">
+                  <div
+                    className={
+                      "product-callout-copy " +
+                      (this.props.subTitleClass ? this.props.subTitleClass : "")
+                    }
+                  >
+                    {this.props.subtitle}
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              ""
+            )}
             {this.props.body ? this.props.body : ""}
           </div>
           {this.props.outerBody ? this.props.outerBody : ""}
