@@ -33,16 +33,17 @@ class Stickynav extends Component {
                   ))
                 : ""}
             </div>
+            {/* do we want to show a contact us always? or will there come a time where we want to hide the CTA part if not needed */}
             <div className="arc-sticky-menu d-flex align-items-center">
               <a
                 href={
-                  this.props.rightLink
-                    ? this.props.rightLink
+                  this.props.stickyCTALink
+                    ? this.props.stickyCTALink
                     : "https://www2.arccorp.com/about-us/contact-us/"
                 }
                 className="arc-sticky-link-right"
               >
-                {this.props.contactUs ? this.props.contactUs : "Contact Us"}{" "}
+                {this.props.stickyCTA ? this.props.stickyCTA : "Contact Us"}{" "}
                 <i className="fas fa-chevron-right"></i>
               </a>
             </div>
