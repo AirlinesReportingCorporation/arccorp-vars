@@ -1,5 +1,5 @@
 // Make this into a component from ARC Pay - visa,amex, etc.
-
+// Make this into col-auto to be able to handle any number of images
 {/* <div class="sub-callout-container " style="padding-left: 10px; padding-right:10px; padding-bottom: 120px;">
             <div class="container">
               <div class="row align-items-center text-center">

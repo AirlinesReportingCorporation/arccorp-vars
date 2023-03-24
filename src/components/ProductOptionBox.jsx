@@ -1,29 +1,60 @@
-// From Travel Demand
+import React, { Component } from "react";
 
+// From Travel Demand
 // have a transparent option to place it into another component
 
-{/* <div class="product-option-box lazy entered loaded" data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/product-container-bg-1.jpg" data-ll-status="loaded" style="background-image: url(&quot;https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/product-container-bg-1.jpg&quot;);">
-    <div class="row align-items-center">
-      <div class="col-lg-4">
-        <div class="product-option product-option-container-item" data-id="3">
-          <div class="product-option-container-item-eyebrow">
-            Product Option
+class ProductOptionBox extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div
+        class="product-option-box lazy entered loaded"
+        data-bg={this.props.bg ? this.props.bg : ''}
+        style={{backgroundImage: 'url(' + this.props.bg ? this.props.bg : '' +')',}}
+      >
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div
+              class="product-option product-option-container-item"
+              data-id="3"
+            >
+              <div class="product-option-container-item-eyebrow">
+                {/* Copy on the top part of the box */}
+                {this.props.prodEyebrow}
+              </div>
+              <div class="product-option-container-item-title">
+                {/* The main text for the box */}
+                {this.props.prodMain}
+              </div>
+              <img
+                class="lazy entered loaded"
+                data-src={this.props.prodIcon ? this.props.prodIcon : ""}
+                alt="Snowflake"
+                data-ll-status="loaded"
+                src={this.props.prodIcon ? this.props.prodIcon : ""}
+              />
+            </div>
           </div>
-          <div class="product-option-container-item-title">
-            Snowflake <br>Database<br>Sharing
+          <div class="col-lg-8">
+            <div class="product-copy-item">
+              {this.props.rightIcon ? 
+              <img
+                class="lazy entered loaded"
+                data-src={this.props.rightIcon}
+                alt="Snowflake Logo"
+                data-ll-status="loaded"
+                src={this.props.rightIcon}
+              /> : ""}
+              <p>
+                {this.props.rightCopy}
+              </p>
+            </div>
           </div>
-          <img class="lazy entered loaded" data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake-icon.png?1" alt="Snowflake" data-ll-status="loaded" src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake-icon.png?1">
         </div>
       </div>
-      <div class="col-lg-8">
-        <div class="product-copy-item">
-          <img class="lazy entered loaded" data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake.png?123" alt="Snowflake Logo" data-ll-status="loaded" src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake.png?123">
-          <p>
-            ARC Travel Demand is also available as a shared database on
-            Snowflake. Users can easily query, ingest and analyze data on
-            demand, without the need for additional data storage.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> */}
+    );
+  }
+}

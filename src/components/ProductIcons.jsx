@@ -1,3 +1,5 @@
+// Fix this to have a title, copy and also fixe the icon cards to be able to expand like on intern page
+
 import React, { Component } from "react";
 
 import LazyLoad from "vanilla-lazyload";

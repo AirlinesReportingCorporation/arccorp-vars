@@ -27,12 +27,14 @@ class ProductCallout extends Component {
                 <div class="callout-box-copy">
                   {this.props.subtitle}
                 </div>
+                {this.props.cta ? 
                 <a
                   href={this.props.ctaLink}
                   class="ctaBtn ctaBtn--white product-cta"
                 >
                   {this.props.cta}
                 </a>
+                : ""}
               </div>
             </div>
           </div>
