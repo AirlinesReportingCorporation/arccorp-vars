@@ -41,6 +41,7 @@ class Stickynav extends Component {
                     : "https://www2.arccorp.com/about-us/contact-us/"
                 }
                 className="arc-sticky-link-right"
+                target={this.props.target}
               >
                 {this.props.contactUs ? this.props.contactUs : "Contact Us"}{" "}
                 <i className="fas fa-chevron-right"></i>
