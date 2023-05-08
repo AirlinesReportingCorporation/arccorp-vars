@@ -24,3 +24,19 @@ $autopilot: #000000;
 //additional modifiers
 $black: $autopilot;
 $white: $clearskies;
+$red: $nowboarding;
+$yellow: $beacon;
+
+$brand-colors: ("teal", $arc-teal), ("arc-teal", $arc-teal), ("tarmac", $tarmac), ("lightgray", $altitude-gray), ("concourse", $concourse), ("white", $white),
+("flap3", $flap3), ("fuselage", $fuselage), ("nightshade", $nightshade), ("signalorange", $signalorange), ("airfield", $airfield), ("flare", $flare),
+("beacon", $beacon), ("yellow", $yellow), ("nowboarding", $nowboarding), ("red", $red), ("now-boarding", $nowboarding), ("fog", $fog), ("overcast", $overcast), ("landing", $landing), ("black", $black);
+
+@each $color in $brand-colors {
+  .type-color-#{nth($color,1)} {
+    color: nth($color, 2) !important;
+  }
+
+  .bg-color-#{nth($color,1)} {
+    background: nth($color, 2) !important;
+  }
+}

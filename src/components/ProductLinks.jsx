@@ -30,7 +30,13 @@ class ProductLinks extends Component {
             <div className="row align-items-center text-center">
               {this.props.prodLink
                 ? this.props.prodLink.map((prodLink, i) => (
-                    <div className={this.props.colClass ? this.props.colClass : "col-lg-auto"}>
+                    <div
+                      className={
+                        this.props.colClass
+                          ? this.props.colClass
+                          : "col-lg-auto"
+                      }
+                    >
                       <div className="box-icon-item">
                         <img
                           className="lazy box-icon-img"
@@ -40,8 +46,19 @@ class ProductLinks extends Component {
                         />
                         <div className="box-icon-header">{prodLink.header}</div>
                         <div className="box-icon-copy">{prodLink.copy}</div>
-                        <a target="_blank" href={prodLink.link} className="link-download">
-                          {prodLink.cta} <i className= {prodLink.cta ? ( prodLink.cta === "Download" ? "fas fa-chevron-down" : "fas fa-chevron-right") : ""}></i>
+                        <a
+                          target="_blank"
+                          href={prodLink.link}
+                          className="link-download"
+                        >
+                          {prodLink.cta}{" "}
+                          <i
+                            className={
+                              prodLink.direction == "down"
+                                ? "fas fa-chevron-down"
+                                : "fas fa-chevron-right"
+                            }
+                          ></i>
                         </a>
                       </div>
                     </div>
