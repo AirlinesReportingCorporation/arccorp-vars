@@ -19,7 +19,7 @@ const Template = (args) => <ProductIcons {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  className: "",
+  class: "",
   bg: "https://www2.arccorp.com/globalassets/destination-gateway/dg-bg-2.png",
   id: "product-icons",
   copy: "Testing Product Icons Copy",
@@ -53,7 +53,7 @@ Primary.args = {
 
 export const ColorBackground = Template.bind({});
 ColorBackground.args = {
-  className: "bg-color-teal",
+  class: "bg-color-teal",
   bg: "",
   id: "product-icons",
   copy: "Testing Product Icons Copy",

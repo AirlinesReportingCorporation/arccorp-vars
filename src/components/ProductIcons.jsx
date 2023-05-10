@@ -27,21 +27,22 @@ class ProductIcons extends Component {
   render() {
     return (
       <div
-        class={this.props.className ? this.props.className + " bg-section lazy" : "bg-section lazy"}
+        className={this.props.class ? this.props.class + " bg-section lazy" : "bg-section lazy"}
+        style={{ backgroundImage: this.props.bg ? this.props.bg : ""}}
         data-bg={this.props.bg}
       >
         <div class={this.props.bg} id={this.props.id}>
           <div class="product-icon-container">
             <div class="text-center">
               <div class="row">
-                <div class="col-lg-12">
+                {this.props.copy? <div class="col-lg-12">
                   <div
                     className="product-icon-title text-center"
                     style={{ marginTop: "60px" }}
                   >
                     {this.props.copy}
                   </div>
-                </div>
+                </div> : ""}
               </div>
 
               <div class="row ss-row">
