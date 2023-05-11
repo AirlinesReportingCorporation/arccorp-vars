@@ -11,9 +11,28 @@ import "./main.scss";
 
 <Meta title="Utilities/Classes/Colors" />
 
-## Colors
+## Font Colors
 
-### Font Colors
+
+### Getting started
+
+To use text colors, you can import colors from arccorp-vars by using the use statement: 
+```
+@use "~arccorp-vars/src/scss/colors.scss";
+```
+
+To use all parts of the arccorp-vars system, you can import main: 
+```
+@use "~arccorp-vars/src/scss/main.scss";
+```
+
+arccorp-vars uses a list of predefined colors that are aligned with our branding. You can see more in our style guide listed <a href="http://localhost:6006/?path=/docs/utilities-classes-colors--docs#use-guide">here</a>.
+
+<hr/>
+
+### Using Font Colors in Classes
+
+Below is a list of colors that are predefined as well as the color that they represent. 
 
 <div className="type-font-regular type-color-teal"> $Teal :  type-color-teal or type-color-arc-teal</div>
 <div className="type-font-regular type-color-tarmac"> $Tarmac : type-color-tarmac</div>
@@ -37,6 +56,29 @@ To use the className: type-color- (insert scss color here) <br/>
 ```
 <div className="type-font-regular type-color-teal"> Teal</div>
 ```
+<hr/>
+
+### Using Font Colors in sass
+
+Additionally, you can use these colors inside your sass pages by doing the following: 
+
+```
+color: main.$black;
+```
+
+This uses the scss variable that aligns with the classes listed above. Make sure that the arccorp-vars is imported using the ```@use``` statement shown at the top of this page.
+
+
+You can also use these to make border colors, as you would with any other color: 
+
+```
+border-bottom: 1px solid main.$tarmac;
+```
+
+<hr/>
 
 ## Use Guide
-For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>
+
+For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>. 
+
+Additionally, for use with React, check out <a href="http://localhost:6006/?path=/docs/example-introduction--docs#using-react-components">this page</a> for importing and usage in React.
