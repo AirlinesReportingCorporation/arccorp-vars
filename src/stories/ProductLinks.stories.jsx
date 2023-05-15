@@ -35,6 +35,7 @@ Primary.args = {
       alt: "Chargebacks Best Practices",
       header: "Chargebacks Best Practices",
       copy: "A set of best practices to help travel agencies reduce and mitigate chargebacks.",
+      cta: "Learn More",
     },
     {
       icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/security-icon.png",
