@@ -28,6 +28,7 @@ Primary.args = {
       copy: "A concise guide with advice, best practices and practical examples for travel payment professionals.",
       link: "https://www2.arccorp.com/support-training/travel-agency-payment-best-practices/",
       cta: "Download",
+      direction: "down"
     },
     {
       icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/money-report-icon.png",
