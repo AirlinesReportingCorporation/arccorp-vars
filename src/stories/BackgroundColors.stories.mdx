@@ -1,44 +1,56 @@
-import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
 import "./main.scss";
 
 <Meta title="Utilities/Classes/Background Colors" />
 
-
 ## Background Colors
+{
+    export const colors = [
+        {color: 'white', code: ['bg-color-white']},
+        {color: 'teal', code: ['bg-color-teal', 'bg-color-arc-teal']},
+        {color: 'tarmac', code: ['bg-color-tarmac']},
+        {color: 'light gray', code: ['bg-color-lightgray']},
+        {color: 'concourse', code: ['bg-color-concourse']},
+        {color: 'flap 3', code: ['bg-color-flap3']},
+        {color: 'fuselage', code: ['bg-color-fuselage']},
+        {color: 'nightshade', code: ['bg-color-nightshade']},
+        {color: 'signal orange', code: ['bg-color-signalorange']},
+        {color: 'airfield', code: ['bg-color-airfield']},
+        {color: 'flare', code: ['bg-color-flare']},
+        {color: 'beacon', code: ['bg-color-beacon', 'bg-color-yellow']},
+        {color: 'now boarding', code: ['bg-color-nowboarding', 'bg-color-red']},
+        {color: 'overcast', code: ['bg-color-overcast']},
+        {color: 'landing', code: ['bg-color-landing']},
+        {color: 'black', code: ['bg-color-black']},
 
-<div className="type-font-regular type-color-black bg-color-white"> $White background</div>
-<div className="type-font-regular type-color-white bg-color-teal"> $Teal</div>
-<div className="type-font-regular type-color-white bg-color-tarmac"> $Tarmac </div>
-<div className="type-font-regular type-color-black bg-color-lightgray"> $Light Gray</div>
-<div className="type-font-regular type-color-white bg-color-concourse">$Concourse </div>
-<div className="type-font-regular type-color-white bg-color-flap3">$Flap 3</div>
-<div className="type-font-regular type-color-white bg-color-fuselage">$Fuselage</div>
-<div className="type-font-regular type-color-white bg-color-nightshade">$Nightshade</div>
-<div className="type-font-regular type-color-white bg-color-signalorange">$Signal Orange</div>
-<div className="type-font-regular type-color-white bg-color-airfield">$Airfield </div>
-<div className="type-font-regular type-color-white bg-color-flare">$Flare</div>
-<div className="type-font-regular type-color-white bg-color-beacon">$Beacon</div>
-<div className="type-font-regular type-color-white bg-color-yellow">$Yellow </div>
-<div className="type-font-regular type-color-white bg-color-nowboarding">$Now Boarding</div>
-<div className="type-font-regular type-color-white bg-color-red">$Red</div>
-<div className="type-font-regular type-color-white bg-color-overcast">$Overcast</div>
-<div className="type-font-regular type-color-white bg-color-landing">$Landing</div>
-<div className="type-font-regular type-color-white bg-color-black">$Black</div>
+    ];
+
+    colors.map(color => console.log(color)) 
+
+    // On hold for after the meeting
+    
+
+}
+
+<div className="type-font-regular sb-color-card-outer type-color-black bg-color-white">
+  <div> $White background </div>
+</div>
 
 Same name as the Colors classes for the text, just use bg instead of type
+
 ```
 <div className="type-font-regular type-color-black bg-color-white">$white</div>
 
 ```
 
-
 ## Use Guide
+
 For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>
