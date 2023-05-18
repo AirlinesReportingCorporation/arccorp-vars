@@ -27,29 +27,37 @@ class IconCard extends Component {
   // Adjust the classes to be independant of the sales stats page
 
   render() {
+    let marginPosition = "";
+    if (this.props.position == "left") {
+      marginPosition = "mr-auto";
+    }
+    else if(this.props.position == "right"){
+      marginPosition = "ml-auto";
+    }
+    else {
+      marginPosition = "mx-auto";
+    }
+
     return this.props.type == "component" ? (
-      <div class="row arc-icon-card-row">
+      <div className={"row arc-icon-card-row " + marginPosition}>
         {this.props.iconCards
           ? this.props.iconCards.map((card, i) => (
-              <div class="col-lg-6">
+              <div className="col-lg-6">
                 <div
                   style={card.cardStyle}
-                  class="arc-icon-card d-flex align-items-center"
+                  className="arc-icon-card d-flex align-items-center"
                 >
-                  <div class="arc-icon-card-image">
-                    <div class="lazyload-wrapper">
+                  <div className="arc-icon-card-image">
+                    <div className="lazyload-wrapper">
                       <img
-                        class="lazy"
+                        className="lazy"
                         style={card.imageStyle}
                         src={card.image}
                       />
                     </div>
                   </div>
 
-                  <div
-                    class="arc-icon-card-copy"
-                    style={card.copyStyle}
-                  >
+                  <div className="arc-icon-card-copy" style={card.copyStyle}>
                     {card.copy}
                   </div>
                 </div>
@@ -67,12 +75,12 @@ class IconCard extends Component {
         style={{ backgroundImage: this.props.bg ? this.props.bg : "" }}
         data-bg={this.props.bg}
       >
-        <div class={this.props.bg} id={this.props.id}>
-          <div class="product-icon-container">
-            <div class="text-center">
-              <div class="row">
+        <div className={this.props.bg} id={this.props.id}>
+          <div className="product-icon-container">
+            <div className="text-center">
+              <div className="row">
                 {this.props.copy ? (
-                  <div class="col-lg-12">
+                  <div className="col-lg-12">
                     <div
                       className="product-icon-title text-center"
                       style={{ marginTop: "60px" }}
@@ -85,18 +93,18 @@ class IconCard extends Component {
                 )}
               </div>
 
-              <div class="row arc-icon-card-row">
+              <div className="row arc-icon-card-row">
                 {this.props.prodIcons
                   ? this.props.prodIcons.map((prodIcons, i) => (
-                      <div class="col-lg-6">
-                        <div class="arc-icon-card d-flex align-items-center">
-                          <div class="arc-icon-card-image">
-                            <div class="lazyload-wrapper">
-                              <img class="lazy" src={prodIcons.image} />
+                      <div className="col-lg-6">
+                        <div className="arc-icon-card d-flex align-items-center">
+                          <div className="arc-icon-card-image">
+                            <div className="lazyload-wrapper">
+                              <img className="lazy" src={prodIcons.image} />
                             </div>
                           </div>
 
-                          <div class="arc-icon-card-copy">{prodIcons.copy}</div>
+                          <div className="arc-icon-card-copy">{prodIcons.copy}</div>
                         </div>
                       </div>
                     ))
