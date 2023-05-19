@@ -39,7 +39,7 @@ class IconCard extends Component {
     }
 
     return this.props.type == "component" ? (
-      <div className={"row arc-icon-card-row " + marginPosition}>
+      <div className={"row arc-icon-card-row " + marginPosition} style={{maxWidth: this.props.cardWidth}}>
         {this.props.iconCards
           ? this.props.iconCards.map((card, i) => (
               <div className="col-lg-6">
@@ -47,11 +47,10 @@ class IconCard extends Component {
                   style={card.cardStyle}
                   className="arc-icon-card d-flex align-items-center"
                 >
-                  <div className="arc-icon-card-image">
+                  <div className="arc-icon-card-image" style={card.imageStyle}>
                     <div className="lazyload-wrapper">
                       <img
                         className="lazy"
-                        style={card.imageStyle}
                         src={card.image}
                       />
                     </div>
