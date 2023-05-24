@@ -9,10 +9,14 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-scss",
+    "@storybook/addon-storysource",
+    "storybook-addon-pseudo-states"
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
   },
+  docs: {
+    autodocs: true
+  }
 };
-
