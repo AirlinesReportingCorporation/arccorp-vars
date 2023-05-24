@@ -40,6 +40,7 @@ class ProductJumbo extends Component {
                 }}
               >
                 <h2 className="product-header white">{this.props.title}</h2>
+                {this.props.ctaTitle? 
                 <a
                   href={this.props.ctaLink}
                   className="ctaBtn product-cta "
@@ -47,10 +48,11 @@ class ProductJumbo extends Component {
                 >
                   {this.props.ctaTitle ? this.props.ctaTitle : "Learn More"}
                 </a>
+                : ""}
               </div>
             </div>
           </div>
-
+          {this.props.subtitle ? 
           <div className="row">
             <div className="col-lg-12">
               <div className="product-callout">
@@ -63,6 +65,7 @@ class ProductJumbo extends Component {
               </div>
             </div>
           </div>
+          : ""}
         </div>
       </div>
     );

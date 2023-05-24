@@ -22,19 +22,21 @@ class ProductText extends Component {
       >
         <div className="callout-container">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-10">
-                <div className="product-eyebrow">{this.props.eyebrow}</div>
-                <h2
-                  className={
-                    "product-header " +
-                    (this.props.titleClass ? this.props.titleClass : "")
-                  }
-                >
-                  {this.props.title}
-                </h2>
+              <div className="row">
+                <div className="col-lg-10">
+                {this.props.eyebrow ? (
+                  <div className="product-eyebrow">{this.props.eyebrow}</div>): ("")}
+                  <h2
+                    className={
+                      "product-header " +
+                      (this.props.titleClass ? this.props.titleClass : "")
+                    }
+                  >
+                    {this.props.title}
+                  </h2>
+                </div>
               </div>
-            </div>
+
             {this.props.subTitleClass ? (
               <div className="row">
                 <div className="col-lg-12">
@@ -54,6 +56,7 @@ class ProductText extends Component {
             {this.props.body ? this.props.body : ""}
           </div>
           {this.props.outerBody ? this.props.outerBody : ""}
+          {/* Need to ask about outerbody */}
         </div>
       </div>
     );
