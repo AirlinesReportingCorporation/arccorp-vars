@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/addon-docs";
+import { Meta, Story } from "@storybook/addon-docs";
 import Code from "./assets/code-brackets.svg";
 import Colors from "./assets/colors.svg";
 import Comments from "./assets/comments.svg";
@@ -8,14 +8,11 @@ import Plugin from "./assets/plugin.svg";
 import Repo from "./assets/repo.svg";
 import StackAlt from "./assets/stackalt.svg";
 import "./main.scss";
+import { ARCColorArray } from "./Colors.js"
 
 <Meta title="Utilities/Classes/Background Colors" />
 
 ## Background Colors
-
-<div className="type-font-regular sb-color-card-outer type-color-black bg-color-white">
-   $White background
-</div>
 
 Same name as the Colors classes for the text, just use bg instead of type
 
@@ -23,6 +20,14 @@ Same name as the Colors classes for the text, just use bg instead of type
 <div className="type-font-regular type-color-black bg-color-white">$white</div>
 
 ```
+<Story name="Background Color">
+{/* Make a Color component for mapping through the colors. */}
+{
+   ARCColorArray.map(color => 
+   <div className={'bg-color-' + color.class}> {color.name} </div>
+   )
+}
+</Story>
 
 ## Use Guide
 
