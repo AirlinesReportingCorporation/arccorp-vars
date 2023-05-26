@@ -1,4 +1,4 @@
-import "partials/colors.scss";
+import "../scss/partials/colors.scss";
 export const ARCColorArray = [
     {
         alias: "arc-teal",
@@ -94,7 +94,7 @@ export const ARCColorArray = [
     {
         alias: "white",
         name: "Clear Skies",
-        class: "clearskies",
+        class: "white",
         dark: false,
         light: true,
     },
@@ -122,7 +122,7 @@ export const ARCColorArray = [
     {
         alias: "black",
         name: "Autopilot",
-        class: "autopilot",
+        class: "black",
         dark: false,
         light: true,
     },
