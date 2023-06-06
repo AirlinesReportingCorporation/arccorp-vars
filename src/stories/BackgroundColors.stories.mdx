@@ -28,7 +28,7 @@ Same name as the Colors classes for the text, just use bg instead of type
   <Row>
     {ARCColorArray.map((color) => (
       <Col lg={4}>
-        <ColorCard class={"sb-color-card-outer bg-color-" + color.class} name={color.name}/>
+        <ColorCard class={"bg-color-" + color.class} name={color.name} alias={color.alias}/>
       </Col>
     ))}
   </Row>
