@@ -1,5 +1,5 @@
 import { Meta, Story } from "@storybook/addon-docs";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Code from "./assets/code-brackets.svg";
 import Colors from "./assets/colors.svg";
 import Comments from "./assets/comments.svg";
@@ -27,7 +27,9 @@ Same name as the Colors classes for the text, just use bg instead of type
   {/* Make a Color component for mapping through the colors. */}
   <Row>
     {ARCColorArray.map((color) => (
-      <ColorCard class={"bg-color-" + color.class} name={color.name} />
+      <Col lg={4}>
+        <ColorCard class={"sb-color-card-outer bg-color-" + color.class} name={color.name}/>
+      </Col>
     ))}
   </Row>
 </Story>

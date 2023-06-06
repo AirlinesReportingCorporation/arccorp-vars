@@ -17,7 +17,7 @@ export const ARCColorArray = [
     {
         alias: "",
         name: "Altitude Gray",
-        class: "altitude-gray",
+        class: "lightgray",
         dark: false,
         light: true,
     },
@@ -25,13 +25,6 @@ export const ARCColorArray = [
         alias: "",
         name: "Concourse",
         class: "concourse",
-        dark: false,
-        light: true,
-    },
-    {
-        alias: "",
-        name: "Flap3",
-        class: "flap3",
         dark: false,
         light: true,
     },
