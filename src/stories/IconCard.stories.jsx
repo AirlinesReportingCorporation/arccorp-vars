@@ -21,9 +21,10 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   class: "",
+  type: "section",
   bg: "https://www2.arccorp.com/globalassets/destination-gateway/dg-bg-2.png",
-  id: "product-icons",
-  copy: "Testing Product Icons Copy",
+  id: "arc-icon-card",
+  copy: "Testing ARC's Icon Cards",
   prodIcons: [
     {
       image:
@@ -55,9 +56,10 @@ Primary.args = {
 export const ColorBackground = Template.bind({});
 ColorBackground.args = {
   class: "bg-color-teal",
+  type: "section",
   bg: "",
-  id: "product-icons",
-  copy: "Testing Product Icons Copy",
+  id: "arc-icon-card",
+  copy: "Testing ARC's Icon Cards",
   prodIcons: [
     {
       image:
@@ -91,9 +93,9 @@ export const Component = Template.bind({});
 Component.args = {
   position: 'center',
   bg: "https://www2.arccorp.com/globalassets/destination-gateway/dg-bg-2.png",
-  id: "product-icons",
+  id: "arc-icon-card",
   type: "component",
-  copy: "Testing Product Icons Copy",
+  copy: "Testing ARC's Icon Cards",
   iconCards: [
     {
       image:

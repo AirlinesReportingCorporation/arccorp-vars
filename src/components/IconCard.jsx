@@ -64,7 +64,7 @@ class IconCard extends Component {
             ))
           : ""}
       </div>
-    ) : (
+    ) : this.props.type == "section" ? (
       <div
         className={
           this.props.class
@@ -75,13 +75,13 @@ class IconCard extends Component {
         data-bg={this.props.bg}
       >
         <div className={this.props.bg} id={this.props.id}>
-          <div className="product-icon-container">
+          <div className="arc-icon-card-container">
             <div className="text-center">
               <div className="row">
                 {this.props.copy ? (
                   <div className="col-lg-12">
                     <div
-                      className="product-icon-title text-center"
+                      className="arc-icon-card-copy text-center"
                       style={{ marginTop: "60px" }}
                     >
                       {this.props.copy}
@@ -113,7 +113,8 @@ class IconCard extends Component {
           </div>
         </div>
       </div>
-    );
+    ): "Please use section or component to choose the type of icon card you'd like to render";
+    
   }
 }
 
