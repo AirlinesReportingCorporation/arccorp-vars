@@ -8,6 +8,7 @@ export const ARCColorArray = [
         gray: false,
         light: true,
         note: "One of the primary colors of ARC's selections, primarily used as backgrounds and accents",
+        hex: "#189BB0"
     },
     {
         alias: "",
@@ -17,6 +18,7 @@ export const ARCColorArray = [
         gray: true,
         light: true,
         note: "One of the most used colors, primarily for backgrounds and text colors",
+        hex: "#2A2B2C"
     },
     {
         alias: "",
@@ -26,6 +28,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent color for backgrounds",
+        hex: "#d4d4d4"
     },
     {
         alias: "",
@@ -35,6 +38,7 @@ export const ARCColorArray = [
         gray: false,
         light: true,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#316677"
     },
     {
         alias: "",
@@ -44,6 +48,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#c6b593"
     },
     {
         alias: "",
@@ -53,6 +58,7 @@ export const ARCColorArray = [
         gray: false,
         light: true,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#6d6e71"
     },
     {
         alias: "",
@@ -62,6 +68,7 @@ export const ARCColorArray = [
         gray: true,
         light: true,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#383552"
     },
     {
         alias: "",
@@ -71,6 +78,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#f77f00"
     },
     {
         alias: "",
@@ -80,6 +88,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#8ac926"
     },
     {
         alias: "",
@@ -89,6 +98,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#ff1b71"
     },
     {
         alias: "yellow",
@@ -98,6 +108,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#fcbf49"
     },
     {
         alias: "red",
@@ -107,6 +118,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent/ rarely used on the site",
+        hex: "#ef233c"
     },
     {
         alias: "white",
@@ -116,6 +128,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "One of the most used colors, primarily for backgrounds and text colors",
+        hex: "#ffffff"
     },
     {
         alias: "",
@@ -125,6 +138,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent color; Mainly used for text options",
+        hex: "#f7f5f5"
     },
     {
         alias: "",
@@ -134,6 +148,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent color; Mainly used for text options",
+        hex: "#aaaaaa"
     },
     {
         alias: "",
@@ -143,6 +158,7 @@ export const ARCColorArray = [
         gray: false,
         light: false,
         note: "Primarily used as an accent color; Mainly used for text options",
+        hex: "#888888"
     },
     {
         alias: "black",
@@ -152,6 +168,7 @@ export const ARCColorArray = [
         gray: true,
         light: true,
         note: "One of the most used colors, primarily for backgrounds and text colors",
+        hex: "#000000"
     },
     
 ]

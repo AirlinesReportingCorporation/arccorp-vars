@@ -16,9 +16,11 @@ export default function ColorCard(props) {
   let fontColor = darkColors.includes(props.name) ? "white" : "black";
   return (
     <div className={"sb-color-card-outer " + props.class}>
-      <p className="type-font-semibold" style={{ color: fontColor }}>
+      <span className="type-font-semibold" style={{ color: fontColor }}>
         {props.name}
-      </p>
+      </span>
+      <br/>
+      <span style={{ color: fontColor }}>{props.hex}</span>
       <div className="arc-pt-30">
         <span className="type-font-semibold" style={{ color: fontColor }}>
           Class:
@@ -61,6 +63,11 @@ export default function ColorCard(props) {
         Notes:
         <br/>
         <p>{props.note}</p>
+      </div>
+
+      <div className="d-flex">
+        <a className="ctaBtn" style={{border: "1px solid #2a2b2c", marginLeft: "auto", marginRight: "auto"}}></a>
+        <a className={props.name == "Teal" ? "ctaBtn sbBtn-secondary" : "ctaBtn ctaBtn--main-outline"} style={{marginLeft: "auto", marginRight: "auto"}}></a>
       </div>
       
     </div>
