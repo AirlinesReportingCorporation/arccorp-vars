@@ -1,4 +1,5 @@
 import React from "react";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 // Add auto text color change if the background is dark enough.
 // Add styles using the new spacing options.
@@ -66,7 +67,7 @@ export default function ColorCard(props) {
       </div>
 
       <div className="d-flex">
-        <a className="ctaBtn" style={{border: "1px solid #2a2b2c", marginLeft: "auto", marginRight: "auto"}}></a>
+        <CopyToClipboard text={props.hex}><a className="ctaBtn" style={{border: "1px solid #2a2b2c", marginLeft: "auto", marginRight: "auto"}}>{props.hex}</a></CopyToClipboard>
         <a className={props.name == "Teal" ? "ctaBtn sbBtn-secondary" : "ctaBtn ctaBtn--main-outline"} style={{marginLeft: "auto", marginRight: "auto"}}></a>
       </div>
       
