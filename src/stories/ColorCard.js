@@ -70,7 +70,6 @@ export default function ColorCard(props) {
         <CopyToClipboard text={props.hex}><a className="ctaBtn" style={{border: "1px solid #2a2b2c", marginLeft: "auto", marginRight: "auto"}}>Copy Hex</a></CopyToClipboard>
         <CopyToClipboard text={props.class}><a className={props.name == "Teal" ? "ctaBtn sbBtn-secondary" : "ctaBtn ctaBtn--main-outline"} style={{marginLeft: "auto", marginRight: "auto"}}>Copy Class</a></CopyToClipboard>
       </div>
-      
     </div>
   );
 }
