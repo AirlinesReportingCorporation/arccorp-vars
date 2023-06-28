@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 
 import LazyLoad from "vanilla-lazyload";
+import IconCard from "./IconCard";
 
 if (!document.lazyLoadInstance) {
   document.lazyLoadInstance = new LazyLoad({
@@ -26,46 +27,14 @@ class ProductIcons extends Component {
 
   render() {
     return (
-      <div
-        className={this.props.class ? this.props.class + " bg-section lazy" : "bg-section lazy"}
-        style={{ backgroundImage: this.props.bg ? this.props.bg : ""}}
-        data-bg={this.props.bg}
-      >
-        <div class={this.props.bg} id={this.props.id}>
-          <div class="product-icon-container">
-            <div class="text-center">
-              <div class="row">
-                {this.props.copy? <div class="col-lg-12">
-                  <div
-                    className="product-icon-title text-center"
-                    style={{ marginTop: "60px" }}
-                  >
-                    {this.props.copy}
-                  </div>
-                </div> : ""}
-              </div>
-
-              <div class="row ss-row">
-                {this.props.prodIcons
-                  ? this.props.prodIcons.map((prodIcons, i) => (
-                      <div class="col-lg-6">
-                        <div class="ss-system-info-item d-flex align-items-center">
-                          <div class="product-icon-img">
-                            <div class="lazyload-wrapper">
-                              <img class="lazy" src={prodIcons.image} />
-                            </div>
-                          </div>
-
-                          <div class="product-icon-copy">{prodIcons.copy}</div>
-                        </div>
-                      </div>
-                    ))
-                  : ""}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <IconCard
+        class={this.props.class}
+        bg={this.props.bg}
+        id={this.props.id}
+        copy={this.props.copy}
+        prodIcons={this.props.prodIcons}
+        type={this.props.type}
+      />
     );
   }
 }
