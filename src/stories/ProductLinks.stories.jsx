@@ -24,7 +24,12 @@ Primary.args = {
     {
       icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/person-chart-icon.png",
       alt: "Travel Agency Payment Best Practices",
-      header: "Travel Agency Payment Best Practices",
+      header: (
+        <>
+          Direct Connect <br />
+          Product Sheet
+        </>
+      ),
       copy: "A concise guide with advice, best practices and practical examples for travel payment professionals.",
       link: "https://www2.arccorp.com/support-training/travel-agency-payment-best-practices/",
       cta: "Download",
