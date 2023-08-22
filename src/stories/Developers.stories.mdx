@@ -1,23 +1,24 @@
-import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
 
 <Meta title="Example/Developers" />
 
 # Developers
+
 ## Updating/Adding Components
 
 All components should be updated in the `src > components` folder. Each component should be added and tested in storybook before deploying.
 
 ## Using Storybook
 
-The Storybook environment is used for documentation and testing purposes for SCSS variables and components. Components must be tested via Storybook and approved before deploying to NPM.
+The Storybook environmentis used for documentation and testing purposes for SCSS variables and components. Components must be tested via Storybook and approved before deploying to NPM.
 
 To start Storybook while developing a new component use the `npm run storybook` command to start a development environment. This will deploy to localhost:6006 and allow you to test your component. Storybook documentation pages are under `src > stories` and a new page must be created to be able to test a component. Copy one of the existing stories and rename to match your new component. Then import the new component on that page and update with props to be able to test in storybook.
 
@@ -49,6 +50,6 @@ Make sure to commit those build files and other changes to the repo with a descr
 npm publish
 ```
 
-
 ## Updating/Adding SCSS and Variables
+
 SCSS and Variable tokens are under the `src > scss` folders. The main folder should only contain imports from all partials within the partials folder. For new styles, create a new partial that relates to the variables or component with an underscore in the beginning of the file name like so: `_component.scss`.

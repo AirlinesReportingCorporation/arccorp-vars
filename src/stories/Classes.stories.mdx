@@ -1,91 +1,118 @@
-import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
 import "./main.scss";
 
-<Meta title="Example/Classes" />
+<Meta title="Utilities/Classes/Colors" />
 
-# Classes
-## How to use Font and Color classes
+## Font Colors
 
-These are meant to make it easier to add any weight of font, color and background color.
+### Getting started
 
-## Typography
-<div className="type-font-light"> Light</div>
-<div className="type-font-regular"> Regular</div>
-<div className="type-font-semibold"> Semibold</div>
-<div className="type-font-bold"> Bold</div>
-<div className="type-font-black"> Black</div>
+To use text colors, you can import colors from arccorp-vars by using the use statement:
 
-To use the className: type-font- (insesrt thickness here) <br/>
-By default, the font is SourceSansPro. 
 ```
-<div className="type-font-light">Light</div>
-<div className="type-font-regular">Regular</div>
-<div className="type-font-semibold">Semibold</div>
-<div className="type-font-bold">Bold</div>
-<div className="type-font-black">Black</div>
+@use "~arccorp-vars/src/scss/colors.scss";
 ```
 
-## Colors
+To use all parts of the arccorp-vars system, you can import main:
 
-### Font Colors
-
-<div className="type-font-regular type-color-teal"> Teal :  type-color-teal or type-color-arc-teal</div>
-<div className="type-font-regular type-color-tarmac"> Tarmac : type-color-tarmac</div>
-<div className="type-font-regular type-color-lightgray"> Light Gray : type-color-lightgray</div>
-<div className="type-font-regular type-color-concourse">Concourse : type-color-concourse</div>
-<div className="type-font-regular type-color-flap3">Flap 3 : type-color-flap3</div>
-<div className="type-font-regular type-color-fuselage">Fuselage : type-color-fuselage</div>
-<div className="type-font-regular type-color-nightshade">Nightshade : type-color-nightshade</div>
-<div className="type-font-regular type-color-signalorange">Signal Orange : type-color-signalorange</div>
-<div className="type-font-regular type-color-airfield">Airfield : type-color-airfield</div>
-<div className="type-font-regular type-color-flare">Flare : type-color-flare</div>
-<div className="type-font-regular type-color-beacon">Beacon : type-color-beacon</div>
-<div className="type-font-regular type-color-yellow">Yellow : type-color-yellow</div>
-<div className="type-font-regular type-color-nowboarding">Now Boarding : type-color-nowboarding or type-color-now-boarding</div>
-<div className="type-font-regular type-color-red">Red : type-color-red</div>
-<div className="type-font-regular type-color-overcast">Overcast : type-color-overcast</div>
-<div className="type-font-regular type-color-landing">Landing : type-color-landing</div>
-<div className="type-font-regular type-color-black">Black : type-color-black</div>
-
-To use the className: type-color- (insesrt color here) <br/>
 ```
-<div className="type-font-regular type-color-teal"> Teal</div>
+@use "~arccorp-vars/src/scss/main.scss";
 ```
 
-### Background Colors
+arccorp-vars uses a list of predefined colors that are aligned with our branding. You can see more in our style guide listed <a href="https://www2.arccorp.com/styleguide">here</a>.
 
-<div className="type-font-regular type-color-black bg-color-white"> White background</div>
-<div className="type-font-regular type-color-white bg-color-teal"> Teal</div>
-<div className="type-font-regular type-color-white bg-color-tarmac"> Tarmac </div>
-<div className="type-font-regular type-color-black bg-color-lightgray"> Light Gray</div>
-<div className="type-font-regular type-color-white bg-color-concourse">Concourse </div>
-<div className="type-font-regular type-color-white bg-color-flap3">Flap 3</div>
-<div className="type-font-regular type-color-white bg-color-fuselage">Fuselage</div>
-<div className="type-font-regular type-color-white bg-color-nightshade">Nightshade</div>
-<div className="type-font-regular type-color-white bg-color-signalorange">Signal Orange</div>
-<div className="type-font-regular type-color-white bg-color-airfield">Airfield </div>
-<div className="type-font-regular type-color-white bg-color-flare">Flare</div>
-<div className="type-font-regular type-color-white bg-color-beacon">Beacon</div>
-<div className="type-font-regular type-color-white bg-color-yellow">Yellow </div>
-<div className="type-font-regular type-color-white bg-color-nowboarding">Now Boarding</div>
-<div className="type-font-regular type-color-white bg-color-red">Red</div>
-<div className="type-font-regular type-color-white bg-color-overcast">Overcast</div>
-<div className="type-font-regular type-color-white bg-color-landing">Landing</div>
-<div className="type-font-regular type-color-white bg-color-black">Black</div>
+<hr />
 
-Same name as above for the text, just use bg instead of type
+### Using Font Colors in Classes
+
+
+Below is a list of colors that are predefined as well as the color that they represent.
+
+<div className="type-font-regular type-color-teal">
+  $Teal : ```type-color-teal``` or ```type-color-arc-teal```
+</div>
+<div className="type-font-regular type-color-tarmac">
+  {" "}
+  $Tarmac : ```type-color-tarmac```
+</div>
+<div className="type-font-regular type-color-lightgray">
+  {" "}
+  $Light Gray : ```type-color-lightgray```
+</div>
+<div className="type-font-regular type-color-concourse">
+  $Concourse : ```type-color-concourse```
+</div>
+<div className="type-font-regular type-color-flap3">
+  $Flap 3 : ```type-color-flap3```
+</div>
+<div className="type-font-regular type-color-fuselage">
+  $Fuselage : ```type-color-fuselage```
+</div>
+<div className="type-font-regular type-color-nightshade">
+  $Nightshade : ```type-color-nightshade```
+</div>
+<div className="type-font-regular type-color-signalorange">
+  $Signal Orange : ```type-color-signalorange```
+</div>
+<div className="type-font-regular type-color-airfield">
+  $Airfield : ```type-color-airfield```
+</div>
+<div className="type-font-regular type-color-flare">
+  $Flare : ```type-color-flare```
+</div>
+<div className="type-font-regular type-color-beacon">
+  $Beacon : ```type-color-beacon``` or ```type-color-yellow```
+</div>
+<div className="type-font-regular type-color-nowboarding">
+  $Now Boarding : ```type-color-nowboarding``` or ```type-color-now-boarding```
+  or ```type-color-red```
+</div>
+<div className="type-font-regular type-color-overcast">
+  $Overcast : ```type-color-overcast```
+</div>
+<div className="type-font-regular type-color-landing">
+  $Landing : ```type-color-landing```
+</div>
+<div className="type-font-regular type-color-black">
+  $Black : ```type-color-black```
+</div>
+
+To use the className: type-color- (insert scss color here) <br/>
+
 ```
-<div className="type-font-regular type-color-white bg-color-black">Black</div>
+<div className="type-color-teal">Teal</div>
 ```
 
+<hr />
+
+### Using Font Colors in sass
+
+Additionally, you can use these colors inside your sass pages by doing the following:
+
+```
+color: main.$black;
+```
+
+This uses the scss variable that aligns with the classes listed above. Make sure that the arccorp-vars is imported using the `@use` statement shown at the top of this page.
+
+You can also use these to make border colors, as you would with any other color:
+
+```
+border-bottom: 1px solid main.$tarmac;
+```
+
+<hr />
 
 ## Use Guide
-For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>, <a href="https://www2.arccorp.com/styleguide/visual-identity#typography">Typography</a>
+
+For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>.
+
+Additionally, for use with React, check out <a href="http://localhost:6006/?path=/docs/example-introduction--docs#using-react-components">this page</a> for importing and usage in React.

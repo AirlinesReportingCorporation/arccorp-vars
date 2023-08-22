@@ -1,0 +1,39 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import { Row, Col } from "react-bootstrap";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
+import "./main.scss";
+import { ARCColorArray } from "./Colors.js";
+import ColorCard from "./ColorCard.js";
+
+<Meta title="Utilities/Classes/Background Colors" />
+
+## Background Colors
+
+Same name as the Colors classes for the text, just use bg instead of type
+
+```
+<div className="type-font-regular type-color-black bg-color-white">$white</div>
+
+```
+
+<Story name="Background Color">
+  {/* Make a Color component for mapping through the colors. */}
+  <Row>
+    {ARCColorArray.map((color) => (
+      <Col lg={4} md={6}>
+        <ColorCard class={"bg-color-" + color.class} name={color.name} alias={color.alias} black={color.dark} gray={color.gray} white={color.light} note={color.note} hex={color.hex}/>
+      </Col>
+    ))}
+  </Row>
+</Story>
+
+## Use Guide
+
+For more information and to see the usage guide, check out the Style Guide : <a href="https://www2.arccorp.com/styleguide/visual-identity#colorPalette">Colors</a>

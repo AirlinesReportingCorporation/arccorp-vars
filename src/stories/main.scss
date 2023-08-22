@@ -9,3 +9,28 @@
 .sbdocs {
   max-width: 100% !important;
 }
+
+.sb-highlight {
+  font-weight: bold;
+  color: red;
+}
+
+.sb-color-card-outer {
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: 1px solid #2a2b2c;
+  border-radius: 5px;
+
+  strong {
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  }
+  .sb-accessibility-col {
+    text-align: center;
+  }
+
+  .sbBtn-secondary {
+    border: 2px solid #2a2b2c;
+  }
+}
+
