@@ -1,0 +1,45 @@
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import { Row, Col } from "react-bootstrap";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
+
+<Meta title="Example/Documentation" />
+
+# Release Notes and Changes Documentation
+
+## Version control as well as information for changes
+
+<Row>
+  <Col md={2}>Version Number</Col>
+  <Col>
+    Changes made in this release:{" "}
+    <span style={{ color: "green" }}> Added </span> |{" "}
+    <span style={{ color: "orange" }}> Updated </span> |{" "}
+    <span style={{ color: "red" }}> Removed </span>
+  </Col>
+</Row>
+<hr />
+
+<Row>
+  <Col md={2}>0.2.6</Col>
+  <Col>
+    <span style={{ color: "green" }}> IconCard</span> <br />
+    Merged in IconCard to allow functioning for standalone (component type) or the
+    typical built-in page (section type). For more information, check out the docs{" "}
+    <a href=""> here</a>. (this will link to the docs page) <br/>
+
+    <span style={{color: "orange"}}>ProdJumbo</span> <br/>
+    Updated the doc display on storybook to show the proper CTA class. <br/>
+
+    <span style={{ color: "green" }}>Documentation</span> <br />
+    Added this new Documentation page to track future documentation/ past documentation for clarity and version control.
+
+  </Col>
+</Row>
+<hr />

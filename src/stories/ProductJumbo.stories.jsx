@@ -30,6 +30,6 @@ Primary.args = {
       destination management and marketing strategies.
     </>
   ),
-  cta: "Learn More",
+  ctaTitle: "Learn More",
   ctaLink: "https://arccorp.com/",
 };
