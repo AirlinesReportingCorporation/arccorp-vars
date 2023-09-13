@@ -13,11 +13,17 @@ class Stickynav extends Component {
   render() {
     return (
       <div className="arc-sticky-container" style={{ zIndex: "3" }}>
-        <div className={this.props.className? this.props.className + " arc-sticky-inner": "bg-color-teal arc-sticky-inner"}>
+        <div
+          className={
+            this.props.className
+              ? this.props.className + " arc-sticky-inner"
+              : "bg-color-teal arc-sticky-inner"
+          }
+        >
           <div className="arc-sticky-nav">
             <div className="arc-sticky-brand d-flex align-items-center">
               <a
-                href="#top"
+                href={this.props.pageLink ? this.props.pageLink : "#top"}
                 className="arc-sticky-title"
                 style={{ lineHeight: "20px" }}
               >
