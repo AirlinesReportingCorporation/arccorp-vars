@@ -13,6 +13,10 @@ class ProductQuote extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    document.lazyLoadInstance.update();
+  }
+
   // Update lazyLoad after rerendering of every image
   componentDidUpdate() {
     document.lazyLoadInstance.update();

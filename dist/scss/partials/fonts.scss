@@ -162,5 +162,13 @@ $arc-font-semibold: SourceSansPro-SemiBold, SourceSansPro-Regular, arial,
   helvetica, sans-serif;
 $arc-font-bold: SourceSansPro-Bold, SourceSansPro-Regular, arial, helvetica,
   sans-serif;
-$arc-font-black: SourceSansPro-SemiBold, SourceSansPro-Regular, arial, helvetica,
+$arc-font-black: SourceSansPro-Black, SourceSansPro-Semibold, arial, helvetica,
   sans-serif;
+
+  $brand-fonts: ("regular", $arc-font-regular), ("light", $arc-font-light), ("semibold", $arc-font-semibold), ("bold", $arc-font-bold),("black", $arc-font-black);
+
+@each $font in $brand-fonts {
+  .type-font-#{nth($font,1)} {
+    font-family: nth($font, 2) !important;
+  }
+}

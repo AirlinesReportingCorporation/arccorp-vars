@@ -1,4 +1,172 @@
-$spacing-1: 15px;
-$spacing-2: 30px;
-$spacing-3: 45px;
-$spacing-4: 60px;
+$spacing-15: 15px;
+$spacing-30: 30px;
+$spacing-45: 45px;
+$spacing-60: 60px;
+$spacing-90: 90px;
+$spacing-120: 120px;
+
+// general margin and padding spacing
+$arc-spacing: ("-15", $spacing-15), ("-30", $spacing-30), ("-45", $spacing-45),
+  ("-60", $spacing-60), ("-90", $spacing-90), ("-120", $spacing-120)
+;
+// directional margin and padding spacing:
+// mt-1 | mb-1 | ml-1 | mr-1
+// pt-1 | pb-1 | pl-1 | pr-1
+
+// loop through the spacing options and set them to margin and padding
+@each $space in $arc-spacing {
+    .arc-m#{nth($space,1)} {
+      margin: nth($space, 2) !important;
+    }
+  
+    .arc-p#{nth($space,1)} {
+        padding: nth($space, 2) !important;
+      }
+  }
+// another loop in the one above for different sides of the box?
+  .arc-mt-15 {
+    margin-top: 15px
+  }
+  .arc-ml-15 {
+    margin-left: 15px
+  }
+  .arc-mb-15 {
+    margin-bottom: 15px
+  }
+  .arc-mr-15 {
+    margin-right: 15px
+  }
+  .arc-mt-30 {
+    margin-top: 30px
+  }
+  .arc-ml-30 {
+    margin-left: 30px
+  }
+  .arc-mb-30 {
+    margin-bottom: 30px
+  }
+  .arc-mr-30 {
+    margin-right: 30px
+  }
+  .arc-mt-45 {
+    margin-top: 45px
+  }
+  .arc-ml-45 {
+    margin-left: 45px
+  }
+  .arc-mb-45 {
+    margin-bottom: 45px
+  }
+  .arc-mr-45 {
+    margin-right: 45px
+  }
+  .arc-mt-60 {
+    margin-top: 60px
+  }
+  .arc-ml-60 {
+    margin-left: 60px
+  }
+  .arc-mb-60 {
+    margin-bottom: 60px
+  }
+  .arc-mr-60 {
+    margin-right: 60px
+  }
+  .arc-mt-90 {
+    margin-top: 90px
+  }
+  .arc-ml-90 {
+    margin-left: 90px
+  }
+  .arc-mb-90 {
+    margin-bottom: 90px
+  }
+  .arc-mr-90 {
+    margin-right: 90px
+  }
+  .arc-mt-120 {
+    margin-top: 120px
+  }
+  .arc-ml-120 {
+    margin-left: 120px
+  }
+  .arc-mb-120 {
+    margin-bottom: 120px
+  }
+  .arc-mr-120 {
+    margin-right: 120px
+  }
+
+//   padding
+.arc-pt-15 {
+    padding-top: 15px
+  }
+  .arc-pl-15 {
+    padding-left: 15px
+  }
+  .arc-pb-15 {
+    padding-bottom: 15px
+  }
+  .arc-pr-15 {
+    padding-right: 15px
+  }
+  .arc-pt-30 {
+    padding-top: 30px
+  }
+  .arc-pl-30 {
+    padding-left: 30px
+  }
+  .arc-pb-30 {
+    padding-bottom: 30px
+  }
+  .arc-pr-30 {
+    padding-right: 30px
+  }
+  .arc-pt-45 {
+    padding-top: 45px
+  }
+  .arc-pl-45 {
+    padding-left: 45px
+  }
+  .arc-pb-45 {
+    padding-bottom: 45px
+  }
+  .arc-pr-45 {
+    padding-right: 45px
+  }
+  .arc-pt-60 {
+    padding-top: 60px
+  }
+  .arc-pl-60 {
+    padding-left: 60px
+  }
+  .arc-pb-60 {
+    padding-bottom: 60px
+  }
+  .arc-pr-60 {
+    padding-right: 60px
+  }
+  .arc-pt-90 {
+    padding-top: 90px
+  }
+  .arc-pl-90 {
+    padding-left: 90px
+  }
+  .arc-pb-90 {
+    padding-bottom: 90px
+  }
+  .arc-pr-90 {
+    padding-right: 90px
+  }
+  .arc-pt-120 {
+    padding-top: 120px
+  }
+  .arc-pl-120 {
+    padding-left: 120px
+  }
+  .arc-pb-120 {
+    padding-bottom: 120px
+  }
+  .arc-pr-120 {
+    padding-right: 120px
+  }
