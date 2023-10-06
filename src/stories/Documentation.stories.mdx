@@ -27,8 +27,43 @@ import StackAlt from "./assets/stackalt.svg";
 <hr />
 
 <Row>
+  <Col md={2}>0.2.8</Col>
+  <Col>
+    <span style={{color: "green"}}>Documentation</span> <br/>
+    Added this new Documentation Story to more easily follow updates/ Breaking changes<br/>
+
+    <span style={{ color: "orange" }}>Stickynav</span> <br />
+    Updated to have fall back capability for 2.3 where sitckyCTALink can now be set to rightLink
+
+  </Col>
+</Row>
+<hr />
+
+<Row>
+  <Col md={2}>0.2.7</Col>
+  <Col>
+    <span style={{color: "orange"}}>ProductQuote</span> <br/>
+    Updated to have lazy on mount <br/>
+
+    <span style={{ color: "green" }}>Utilities</span> <br />
+    Added spacing utilities
+
+  </Col>
+</Row>
+<hr />
+
+<Row>
   <Col md={2}>0.2.6</Col>
   <Col>
+  <span style={{ color: "green" }}>Color Cards Story</span> <br />
+    Added developer's color cards with click to copy capability<br/>
+
+    <span style={{ color: "green" }}>Stickynav</span> <br />
+    Added pageLink to Story and capability to the Page Title; It now can take a url or it defaults to #top<br/>
+
+   <span style={{ color: "green" }}> Stories Update</span> <br />
+    Added direction and cta props to the ProductLinks Story page <br/>
+
     <span style={{ color: "green" }}> IconCard</span> <br />
     Merged in IconCard to allow functioning for standalone (component type) or the
     typical built-in page (section type). For more information, check out the docs{" "}
@@ -37,9 +72,45 @@ import StackAlt from "./assets/stackalt.svg";
     <span style={{color: "orange"}}>ProdJumbo</span> <br/>
     Updated the doc display on storybook to show the proper CTA class. <br/>
 
-    <span style={{ color: "green" }}>Documentation</span> <br />
-    Added this new Documentation page to track future documentation/ past documentation for clarity and version control.
+  </Col>
+</Row>
+<hr />
 
+<Row>
+  <Col md={2}>0.2.5</Col>
+  <Col>
+    <span style={{ color: "orange" }}>Dependencies</span> <br />
+    Updated to React 18.2.0 & mdx-js/react to ^2.3.0<br/>
+
+    <span style={{ color: "orange" }}>ProductLinks</span> <br />
+    Changed the arrow direction (Down if set to down, else it's right) <br/>
+
+    <span style={{ color: "green" }}>Stickynav</span> <br />
+    Added a target prop to the CTA link<br/>
+
+    <span style={{ color: "red" }}>Stickynav</span> <br />
+    Removed the background color being hard coded<br/>
+  </Col>
+</Row>
+<hr />
+
+<Row>
+  <Col md={2}>0.2.4</Col>
+  <Col>
+    <span style={{ color: "green" }}>ProductQuote</span> <br />
+    Added ProductQuote to ARCCorp-Vars.<br/>
+
+    <span style={{color: "orange"}}>StickyNav</span> <br/>
+    Changed rightLink to sitckyCTALink; rightLink no longer works.<br/>
+
+    <span style={{ color: "orange" }}>ProductText</span> <br />
+    Now hides eyebrow and subTitle if no eyebrow or subTitle are defined.
+
+    <span style={{ color: "orange" }}>ProductCallout</span> <br />
+    Hides the CTA section if no cta is defined.
+
+    <span style={{ color: "orange" }}>ProductLinks</span> <br />
+    If a column class is not defined, the column defaults to auto.
   </Col>
 </Row>
 <hr />

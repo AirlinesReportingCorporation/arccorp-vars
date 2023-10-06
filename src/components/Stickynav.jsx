@@ -11,6 +11,7 @@ class Stickynav extends Component {
   }
 
   render() {
+    if (this.props.rightLink) {this.props.stickyCTALink = this.props.rightLink}
     return (
       <div className="arc-sticky-container" style={{ zIndex: "3" }}>
         <div
