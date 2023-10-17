@@ -25,6 +25,10 @@ class IconCard extends Component {
   }
 
   render() {
+    // support for class propname wich is now className
+    let className
+    this.props.class ? className = this.props.class : className = this.props.className
+
     let marginPosition = "";
     if (this.props.position == "left") {
       marginPosition = "mr-auto";
@@ -71,8 +75,8 @@ class IconCard extends Component {
       return (
         <div
           className={
-            this.props.class
-              ? this.props.class + " bg-section lazy"
+            className
+              ? className + " bg-section lazy"
               : "bg-section lazy"
           }
           style={{ backgroundImage: this.props.bg ? this.props.bg : "" }}

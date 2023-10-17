@@ -26,9 +26,11 @@ class ProductIcons extends Component {
   }
 
   render() {
+    let className
+    this.props.class ? className = this.props.class : className = this.props.className
     return (
       <IconCard
-        class={this.props.class}
+        className={className}
         bg={this.props.bg}
         id={this.props.id}
         copy={this.props.copy}

@@ -20,7 +20,7 @@ const Template = (args) => <IconCard {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  class: "",
+  className: "",
   type: "section",
   bg: "https://www2.arccorp.com/globalassets/destination-gateway/dg-bg-2.png",
   id: "arc-icon-card",
@@ -55,7 +55,7 @@ Primary.args = {
 
 export const ColorBackground = Template.bind({});
 ColorBackground.args = {
-  class: "bg-color-teal",
+  className: "bg-color-teal",
   type: "section",
   bg: "",
   id: "arc-icon-card",

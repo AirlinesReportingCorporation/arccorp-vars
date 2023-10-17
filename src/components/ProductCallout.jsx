@@ -17,7 +17,7 @@ class ProductCallout extends Component {
     return (
       <div class="callout-box-container">
         <div class="container">
-          <div class="callout-box teal">
+          <div class={this.props.className ? this.props.className + " callout-box" : "callout-box teal"}>
             <div class="row">
               <div class="col-lg-12">
                 <div className="text-center mb-4">

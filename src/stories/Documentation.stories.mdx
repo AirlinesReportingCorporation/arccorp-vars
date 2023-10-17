@@ -27,20 +27,30 @@ import StackAlt from "./assets/stackalt.svg";
 <hr />
 
 <Row>
-  <Col md={2}>0.2.8</Col>
+  <Col md={2}>0.2.8 <em>(In Development)</em></Col>
   <Col>
     <span style={{color: "green"}}>Documentation</span> <br/>
     Added this new Documentation Story to more easily follow updates/ Breaking changes<br/>
 
     <span style={{ color: "orange" }}>Stickynav</span> <br />
-    Updated to have fall back capability for 2.3 where sitckyCTALink can now be set to rightLink
+    Updated to have fall back capability for 2.3 where sitckyCTALink can now be set to rightLink <br/>
 
+    <span style={{ color: "Green" }}>ProductCallout</span> <br />
+    Added the className prop to allow the ability to adjust background color and font color for the callout box. Additionally, added a built in margin of 60px to the bottom.<br/>
+
+    <span style={{ color: "orange" }}>ProductText</span> <br />
+    Changed the prop from subTitleClass to subtitle for qualifier when choosing to display the subtitle. When it was subTitleClass, it was not showing the text if you had subtitle text but didn't set the class. <br/>
+
+    <span style={{ color: "orange" }}>Story/ Component Updates</span> <br />
+    Changed class props to be more consistent, what ever the previous class prop name was now also works with the more unified className prop name. This is meant to help with clearer code and ease of use.<br/>
+    <span style={{ color: "orange" }}>General Story Updates</span> <br />
+    All stories should match the proper prop names and include any that were not obvious before (sucha as ProductText supporting a background image).<br/>
   </Col>
 </Row>
 <hr />
 
 <Row>
-  <Col md={2}>0.2.7</Col>
+  <Col md={2}>0.2.7 <em>(Latest Version)</em></Col>
   <Col>
     <span style={{color: "orange"}}>ProductQuote</span> <br/>
     Updated to have lazy on mount <br/>

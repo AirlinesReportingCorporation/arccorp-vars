@@ -18,6 +18,7 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   className: "",
+  width:"",
   backgroundImage:
     "https://www2.arccorp.com/globalassets/destination-gateway/dg-jumbo.png",
   title: "Looking for a more custom data solution?",

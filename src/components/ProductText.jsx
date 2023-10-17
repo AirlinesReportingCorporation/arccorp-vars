@@ -11,6 +11,7 @@ class ProductText extends Component {
     return (
       <div
         id={this.props.id}
+        style={{backgroundImage: "url(" + this.props.backgroundImage + ")"}}
         className={
           this.props.className
             ? this.props.className + (this.props.backgroundImage ? " lazy" : "")
@@ -37,7 +38,7 @@ class ProductText extends Component {
                 </div>
               </div>
 
-            {this.props.subTitleClass ? (
+            {this.props.subtitle ? (
               <div className="row">
                 <div className="col-lg-12">
                   <div
@@ -56,7 +57,6 @@ class ProductText extends Component {
             {this.props.body ? this.props.body : ""}
           </div>
           {this.props.outerBody ? this.props.outerBody : ""}
-          {/* Need to ask about outerbody */}
         </div>
       </div>
     );

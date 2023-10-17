@@ -28,6 +28,7 @@ Primary.args = {
   subtitle:
     "Destination Gateway offers a powerful combination of airline ticketing, web search, airline schedules and capacity data to help drive long-term results for your community’s support and economic growth.",
   body: "",
+  outerBody:"",
 };
 
 export const BackgroundColor = Template.bind({});
@@ -41,4 +42,19 @@ BackgroundColor.args = {
   subtitle:
     "Destination Gateway offers a powerful combination of airline ticketing, web search, airline schedules and capacity data to help drive long-term results for your community’s support and economic growth.",
   body: "",
+  outerBody:"",
+};
+
+export const BackgroundImage = Template.bind({});
+BackgroundImage.args = {
+  id: "#overview",
+  backgroundImage: "https://www2.arccorp.com/globalassets/destination-gateway/dg-jumbo.png",
+  eyebrow: "Overview",
+  title: "Generate Demand for Your Destination",
+  titleClass: "white",
+  subTitleClass: "",
+  subtitle:
+    "Destination Gateway offers a powerful combination of airline ticketing, web search, airline schedules and capacity data to help drive long-term results for your community’s support and economic growth.",
+  body: "",
+  outerBody:"",
 };
