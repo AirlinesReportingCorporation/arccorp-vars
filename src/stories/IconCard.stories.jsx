@@ -142,12 +142,8 @@ ColorBackground.args = {
 export const Component = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Component.args = {
-<<<<<<< Updated upstream
-  position: "center",
-=======
   colClass:"col-lg-12",
   position: 'center',
->>>>>>> Stashed changes
   bg: "https://www2.arccorp.com/globalassets/destination-gateway/dg-bg-2.png",
   id: "arc-icon-card",
   type: "component",
@@ -178,8 +174,4 @@ Component.args = {
       copy: "Credibility with Stakeholders",
     },
   ],
-<<<<<<< Updated upstream
 };
-=======
-};
->>>>>>> Stashed changes
