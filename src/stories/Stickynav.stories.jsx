@@ -9,9 +9,64 @@ export default {
   title: "Example/Stickynav",
   component: Stickynav,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  // argTypes: {
-  //   backgroundColor: { control: "color" },
-  // },
+  argTypes: {
+    className: {
+      description: "Custom class option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+    pageLink: {
+      description: "Anchor or URL to a Parent page from a child page",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+  stickyCTA: {
+    description: "Call to Action listed on the right end of the stickynav",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  rightLink: {
+    description: "URL link for the call to action on the right end of the stickynav",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  className: {
+    description: "Custom background color class options | bg-color-tarmac, bg-color-teal, etc.",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  title: {
+    description: "Page Title Copy",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  links:{
+    description: "An Array of links consisting of title and url",
+    table: {
+      type: {
+        summary: "array",
+      },
+    },
+  },
+  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

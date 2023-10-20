@@ -4,13 +4,29 @@ import ProductLinks from "../components/ProductLinks";
 import "./main.scss";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+/** Usually used on the newer styles for linking to products with a small title and description. */
 export default {
   title: "Example/ProductLinks",
   component: ProductLinks,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  // argTypes: {
-  //   backgroundColor: { control: "color" },
-  // },
+  argTypes: {
+    colClass: {
+      description: "custom column class | col-lg-4, col-sm-6, etc.",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+  prodLink:{
+    description: "Array of Product Objects",
+    table: {
+      type: {
+        summary: "array",
+      },
+    },
+  },
+  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

@@ -4,13 +4,69 @@ import ProductQuote from "../components/ProductQuote";
 import "./main.scss";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+/** You can use this with a background image by defining backgroundImage url or by leaving it as an empty string and defining the class color (see Stories below). */
 export default {
   title: "Example/ProductQuote",
   component: ProductQuote,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  // argTypes: {
-  //   backgroundColor: { control: "color" },
-  // },
+  argTypes: {
+    className: {
+      description: "Custom class option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+    id: {
+      description: "Custom id/ anchor option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+  backgroundImage:{
+    description: "URL to background image",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  quote:{
+    description: "Quote Copy",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  author: {
+    description: "Author name",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  title: {
+    description: "Author's Company Title",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  company: {
+    description: "Company Name",
+    table: {
+      type: {
+        summary: "string",
+      },
+    },
+  },
+  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
