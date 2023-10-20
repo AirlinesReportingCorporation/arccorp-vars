@@ -20,6 +20,14 @@ export default {
         },
       },
     },
+    colClass: {
+      description: "Optional, defaults to col-lg-6",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
     type: {
       description: "options: section or component",
       table: {
