@@ -46,7 +46,7 @@ class IconCard extends Component {
         >
           {this.props.iconCards
             ? this.props.iconCards.map((card, i) => (
-                <div className="col-lg-6">
+                <div className={this.props.colClass? this.props.colClass : "col-lg-6"}>
                   <div
                     style={card.cardStyle}
                     className="arc-icon-card d-flex align-items-center"
