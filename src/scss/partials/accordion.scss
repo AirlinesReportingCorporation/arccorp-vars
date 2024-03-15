@@ -1,0 +1,95 @@
+.accordionRow {
+    background: #f1f2f2;
+    margin: 0 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color .5s, height .5s;
+}
+
+.accordionRowTop {
+    font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+    transition: .5s;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordionRowStart {
+    position: relative;
+    z-index: 5;
+    padding: 35px;
+    cursor: pointer;
+}
+
+.accordionRow.active .accordionRowStart {
+    background: #ddd;
+}
+
+.accordionRow.active {
+    background: #ddd !important;
+}
+
+.accordionName {
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    color: #212122;
+    font-size: 26px;
+}
+
+.accordionRowInfo {
+    background: #ddd;
+    position: relative;
+    display: none;
+    word-break: break-word;
+    z-index: 4;
+    transition: all 0.5s ease-in-out;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordionRowInfo.show {
+    display: block;
+    min-height: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #2a2b2c;
+}
+
+.apSection {
+    background: #f1f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+}
+.apSectionMargin {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 15px;
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+.fs-open {
+    background: url(https://www2.arccorp.com/globalassets/airline-participation/open.png) center center no-repeat;
+    width: 22px;
+    height: 14px;
+}
+
+.fs-close {
+    background: url(https://www2.arccorp.com/globalassets/airline-participation/open.png) center center no-repeat;
+    width: 22px;
+    height: 14px;
+    transform: rotate(180deg);
+}
