@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ARCAccordion from "../components/ArcAccordion";
 import "./main.scss";
@@ -23,7 +23,7 @@ export default {
         },
       },
     },
-    showing: {
+    setShowing: {
       description: "if it is showing or not",
       control: "boolean",
     },
@@ -40,22 +40,22 @@ const Template = (args) => (
 
 export const Primary = Template.bind({});
 
-export const Grouped = () => {
+export const Grouped = (setShowing) => {
   const groupedAccrodion = Array("list of accordions", [
     {
       name: "I am an Accordion",
       body: "Hello!",
-      showing: false,
+      setShowing: false,
     },
     {
       name: "I am an Accordion 1",
       body: "Hello!",
-      showing: false,
+      setShowing: false,
     },
     {
       name: "I am an Accordion 2",
       body: "Hello!",
-      showing: false,
+      setShowing: false,
     },
   ]);
 
@@ -63,8 +63,13 @@ export const Grouped = () => {
     <div className="full-width">
       <div className="row">
         {groupedAccrodion[1].map(function (accordion) {
-          console.log(accordion);
-          return <ARCAccordion {...accordion} />;
+          return (
+            <ARCAccordion
+              name={accordion.name}
+              body={accordion.body}
+              showing={setShowing}
+            />
+          );
         })}
       </div>
     </div>
