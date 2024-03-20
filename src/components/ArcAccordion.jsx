@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function ARCAccordion(props) {
+  
   const [isShowing, setShowing] = useState(false);
 
   useEffect(() => {

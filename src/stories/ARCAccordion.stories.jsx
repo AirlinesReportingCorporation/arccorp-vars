@@ -23,7 +23,7 @@ export default {
         },
       },
     },
-    setShowing: {
+    showing: {
       description: "if it is showing or not",
       control: "boolean",
     },
@@ -40,34 +40,40 @@ const Template = (args) => (
 
 export const Primary = Template.bind({});
 
-export const Grouped = (setShowing) => {
-  const groupedAccrodion = Array("list of accordions", [
+Primary.args = {
+  name: "I am an Accordion",
+  body: "Hello!",
+  showing: false,
+};
+
+const groupedTemplate = (args) => {
+  let groupedAccordion = [
     {
       name: "I am an Accordion",
       body: "Hello!",
-      setShowing: false,
+      showing: args.showing,
     },
     {
       name: "I am an Accordion 1",
       body: "Hello!",
-      setShowing: false,
+      showing: args.showing,
     },
     {
       name: "I am an Accordion 2",
       body: "Hello!",
-      setShowing: false,
+      showing: args.showing,
     },
-  ]);
+  ];
 
   return (
     <div className="full-width">
       <div className="row">
-        {groupedAccrodion[1].map(function (accordion) {
+        {groupedAccordion.map(function (accordion) {
           return (
             <ARCAccordion
               name={accordion.name}
               body={accordion.body}
-              showing={setShowing}
+              showing={accordion.showing}
             />
           );
         })}
@@ -76,8 +82,8 @@ export const Grouped = (setShowing) => {
   );
 };
 
-Primary.args = {
-  name: "I am an Accordion",
-  body: "Hello!",
-  showing: false,
-};
+export const Grouped = groupedTemplate.bind({});
+
+Grouped.args = {
+  showing: false
+}
