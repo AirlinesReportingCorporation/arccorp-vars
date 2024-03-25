@@ -10,6 +10,30 @@ export default {
   component: ProductLinks,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
+    className: {
+      description: "Custom class option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+    id: {
+      description: "Custom id/anchor option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+    valignClass: {
+      description: "Custom class option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
     colClass: {
       description: "custom column class | col-lg-4, col-sm-6, etc.",
       table: {
@@ -18,14 +42,14 @@ export default {
         },
       },
     },
-  prodLink:{
-    description: "Array of Product Objects",
-    table: {
-      type: {
-        summary: "array",
+    prodLink: {
+      description: "Array of Product Objects",
+      table: {
+        type: {
+          summary: "array",
+        },
       },
     },
-  },
   },
 };
 
@@ -35,6 +59,9 @@ const Template = (args) => <ProductLinks {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
+  id: "",
+  className: "",
+  valignClass: "align-items-start",
   colClass: "col-lg-4",
   prodLink: [
     {
@@ -44,7 +71,7 @@ Primary.args = {
       copy: "A concise guide with advice, best practices and practical examples for travel payment professionals.",
       link: "https://www2.arccorp.com/support-training/travel-agency-payment-best-practices/",
       cta: "Download",
-      direction: "down"
+      direction: "down",
     },
     {
       icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/money-report-icon.png",

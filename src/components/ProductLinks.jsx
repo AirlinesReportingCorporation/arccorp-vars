@@ -24,10 +24,22 @@ class ProductLinks extends Component {
 
   render() {
     return (
-      <div className="box-icon" style={{ paddingTop: "30px" }}>
+      <div
+        id={this.props.id}
+        className={
+          this.props.className ? "box-icon " + this.props.classname : "box-icon"
+        }
+        style={{ paddingTop: "30px" }}
+      >
         <div className="container arc-pay-resources">
           <div className="box-icon-container">
-            <div className="row align-items-center text-center">
+            <div
+              className={
+                this.props.valignClass
+                  ? "row text-center " + this.props.valignClass
+                  : "row align-items-center text-center"
+              }
+            >
               {this.props.prodLink
                 ? this.props.prodLink.map((prodLink, i) => (
                     <div

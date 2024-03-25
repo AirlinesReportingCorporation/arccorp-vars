@@ -1,12 +1,31 @@
 import React, { useState } from "react";
 
-import ARCAccordion from "../components/ArcAccordion";
+import ARCAccordion from "../components/ARCAccordion";
 import "./main.scss";
 
 export default {
   title: "Example/ARC Accordion",
   component: ARCAccordion,
+  parameters: {
+    layout: "padded", // or `padded` by default
+  },
   argTypes: {
+    className: {
+      description: "Custom class option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
+    id: {
+      description: "Custom id/anchor option",
+      table: {
+        type: {
+          summary: "string",
+        },
+      },
+    },
     name: {
       description: "Title for the Arccordion",
       table: {
@@ -33,7 +52,9 @@ export default {
 const Template = (args) => (
   <div className="full-width">
     <div className="row">
-      <ARCAccordion {...args} />
+      <div className="col-lg-12">
+        <ARCAccordion {...args} />
+      </div>
     </div>
   </div>
 );
@@ -41,6 +62,8 @@ const Template = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
+  id: "",
+  className: "",
   name: "I am an Accordion",
   body: "Hello!",
   showing: false,
@@ -70,11 +93,13 @@ const groupedTemplate = (args) => {
       <div className="row">
         {groupedAccordion.map(function (accordion) {
           return (
-            <ARCAccordion
-              name={accordion.name}
-              body={accordion.body}
-              showing={accordion.showing}
-            />
+            <div className="col-lg-12">
+              <ARCAccordion
+                name={accordion.name}
+                body={accordion.body}
+                showing={accordion.showing}
+              />
+            </div>
           );
         })}
       </div>
@@ -85,5 +110,5 @@ const groupedTemplate = (args) => {
 export const Grouped = groupedTemplate.bind({});
 
 Grouped.args = {
-  showing: false
-}
+  showing: false,
+};

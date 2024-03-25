@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 export default function ARCAccordion(props) {
-  
   const [isShowing, setShowing] = useState(false);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export default function ARCAccordion(props) {
   };
 
   return (
-    <div class="col-lg-12 show">
+    <div className="arc-accordion">
       <div
         className={
           (isShowing
