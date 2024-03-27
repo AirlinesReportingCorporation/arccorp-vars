@@ -20,7 +20,7 @@ export default function ARCAccordion(props) {
     <div
       id={props.id}
       className={
-        props.className ? "arc-accordion " + props.classname : "arc-accordion"
+        props.className ? "arc-accordion " + props.className : "arc-accordion"
       }
     >
       <div
