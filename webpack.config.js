@@ -8,6 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    libraryTarget: "umd",
+    library: "arccorp-vars"
   },
   externals: [nodeExternals()],
   target: ["web", "es5"],

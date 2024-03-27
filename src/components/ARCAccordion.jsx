@@ -17,7 +17,10 @@ export default function ARCAccordion(props) {
   };
 
   return (
-    <div className="arc-accordion">
+    <div id={this.props.id}
+    className={
+      this.props.className ? "arc-accordion " + this.props.classname : "arc-accordion"
+    }>
       <div
         className={
           (isShowing
