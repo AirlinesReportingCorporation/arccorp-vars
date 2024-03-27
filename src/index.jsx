@@ -1,3 +1,4 @@
+export { default as ARCAccordion } from "./components/ARCAccordion";
 export { default as ProductCallout } from "./components/ProductCallout";
 export { default as ProductIcons } from "./components/ProductIcons";
 export { default as ProductJumbo } from "./components/ProductJumbo";
