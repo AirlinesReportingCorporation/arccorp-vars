@@ -6,3 +6,5 @@ export { default as ProductQuote } from "./components/ProductQuote";
 export { default as ProductText } from "./components/ProductText";
 export { default as Stickynav } from "./components/Stickynav";
 export { default as ARCAccordion } from "./components/ARCAccordion";
+export { default as ARCModal } from "./components/ARCModal";
+
