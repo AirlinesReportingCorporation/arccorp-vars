@@ -1,0 +1,87 @@
+
+$namespace: arc-card;
+@use "../partials/colors.scss";
+@use "../partials/fonts.scss";
+
+.#{$namespace}-outer {
+    color: unset;
+}
+
+.#{$namespace} {
+    border-radius: 10px;
+    min-height: 350px;
+    background-color: #f7f5f5;
+    margin: 30px auto;
+}
+
+
+.#{$namespace}-body {
+    padding: 40px 20px 15px;
+    height: 350px;
+}
+//Card Types: 
+
+//Image: 
+
+.#{$namespace}-image-top {
+    height: 225px;
+    max-width: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+.#{$namespace}-image {
+    transform: none;
+    background-position: 50%;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: inset 0 0 0 2000px rgba(42,43,44,.4);
+    height: auto;
+    min-height: 225px;
+    width: 100%;
+}
+
+.#{$namespace}-image-title {
+    color: #2a2b2c;
+    font-family: SourceSansPro-Bold, SourceSansPro-Regular, arial, helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.#{$namespace}-image-bottom {
+    height: 175px;
+    max-width: 270px;
+    width: 100%;
+}
+
+.#{$namespace}-image-body {
+    margin: 32px 20px auto;
+}
+
+//Related: 
+
+.#{$namespace}-related-title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    height: 70px;
+    font-family: fonts.$arc-font-bold;
+    &:hover {
+        color: black;
+    }
+}
+
+.#{$namespace}-related-desc {
+    height: 150px;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    &:hover {
+        color: black
+    }
+}
+
+.#{$namespace}-related-cta {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}

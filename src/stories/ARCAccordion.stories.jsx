@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import ARCAccordion from "../components/ARCAccordion";
 import "./main.scss";
